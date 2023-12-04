@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+            .box{
+            background-color: rgb(170, 255, 247);
+            height: 720px;
+            width: 1640px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 4px solid grey;
+        }
+        #A1{
+            color: rgb(255, 46, 81);
+            font-size: 55px;
+            margin: 25px auto;
+            font-weight: bold;
+        }
+        #A2{
+            color: rgb(255, 46, 81);
+            font-size: 40px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        #A3,#demo{
+            color: #06007a;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input{
+            display: inline;
+            width: 240px;
+            padding-top: 4px;
+            padding-bottom: 2px;
+        }
+        .content{
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            margin: 15px;
+        }
+        button{
+            background-color: rgb(255, 12, 52);
+            border: 3px solid black;
+            font-size: 15px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content" id="A1">Big Storm</div>
+            <div class="content" id="A2">Educational website</div>
+            <div class="content" id="A3">Sign In and Shine More</div>
+            <div class="content">Name:
+            <input type="text" placeholder="Enter your Name..." id="name">
+            </div>
+            <div class="content">Email:
+            <input type="text" placeholder="Enter your Email address..." id="email">
+            </div>
+            <div class="content">Password:
+            <input type="password" placeholder="Enter your Password..." id="password">
+            </div>
+            <button id="butt" onclick="signIn()">Sign in to continue</button>
+            <div id="demo"></div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
+
